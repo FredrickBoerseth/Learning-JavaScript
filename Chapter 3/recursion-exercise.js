@@ -1,12 +1,12 @@
 const isEven = function(N) {
     if (N < 0) {
-        console.log("Can't compute negative number")
+        return "Can't compute negative number";
     }
     else if (N == 0) {
-        console.log("Even");
+        return true;
     }
     else if (N == 1) {
-        console.log("Odd");
+        return false;
     }
     else {
         return isEven(N - 2);
@@ -14,6 +14,6 @@ const isEven = function(N) {
 
 }
 
-isEven(50);
-isEven(75);
-isEven(-1);
+console.log(isEven(50));
+console.log(isEven(75));
+console.log(isEven(-1));
